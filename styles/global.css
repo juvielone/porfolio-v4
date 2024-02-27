@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.font_heading {
+  font-family: var(--font-montserrat);
+}
+
+.font_subheading {
+  font-family: var(--font-merriweather);
+}
+
+.font_content {
+  font-family: var(--font-raleway);
+}

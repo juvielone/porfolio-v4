@@ -4,10 +4,9 @@ import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Dashboard", href: "#", current: true },
-  { name: "Team", href: "#", current: false },
+  { name: "About Me", href: "#", current: false },
   { name: "Projects", href: "#", current: false },
-  { name: "Calendar", href: "#", current: false },
+  { name: "Contact", href: "#", current: false },
 ];
 
 function classNames(...classes) {
@@ -16,7 +15,7 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <Disclosure as="nav" className="bg-inherit">
+    <Disclosure as="nav" className="bg-inherit font_heading">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 lg:mt-11 pt-8 bg-red-600">
@@ -36,7 +35,7 @@ export default function Example() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <Image
-                    className="md:h-24 w-32 sm:h-14 "
+                    className="w-32 md:w-32 lg:w-40 sm:h-14 "
                     src="/images/logo.svg"
                     alt="Your Company"
                     width={800}
@@ -57,7 +56,7 @@ export default function Example() {
                             item.current
                               ? "bg-purple-900 text-white"
                               : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                            "rounded-md px-3 py-2 text-sm font-medium"
+                            "rounded-md px-3 py-2 text-lg font-medium"
                           )}
                           aria-current={item.current ? "page" : undefined}
                         >
