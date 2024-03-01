@@ -1,5 +1,4 @@
 import "@styles/global.css";
-import Navbar from "./components/Navbar";
 import { Merriweather, Montserrat, Raleway } from "next/font/google";
 
 // Google Fonts
@@ -29,10 +28,7 @@ const RootLayout = ({ children }) => {
       lang="en"
       className={`${montserrat.variable} ${merriweather.variable} ${raleway.variable}`}
     >
-      <body>
-        <Navbar />
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 };
