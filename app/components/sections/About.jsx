@@ -2,7 +2,7 @@ import Image from "next/image";
 import Tabs from "../AboutTabs";
 const About = () => {
   return (
-    <div className="grid lg:grid-cols-2 mt-5 h-screen">
+    <div className=" grid lg:grid-cols-2 mt-5 h-screen">
       <div className="mx-auto my-auto">
         <Image
           className="w-36 h-34 rounded-full lg:h-92 lg:w-2/3 lg:ml-12"

@@ -13,3 +13,8 @@
 .font_content {
   font-family: var(--font-raleway);
 }
+
+.custom_line {
+  border-left: 6px solid green;
+  height: 500px;
+}

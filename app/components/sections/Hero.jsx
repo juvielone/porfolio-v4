@@ -9,9 +9,7 @@ const Hero = () => {
         </h1>
         <h3 className="font_subheading text-xl mt-5">
           [ joo-vee-lohn ]{" "}
-          <span className="font-bold italic text-gray-700 md:text-yellow-500 lg:text-red-700">
-            web developer
-          </span>
+          <span className="font-bold italic ">web developer</span>
         </h3>
         <h2>
           <p className="font_content w-3/4 mx-auto mt-5 md:text-lg lg:text-xl lg:text-left lg:w-1/2 lg:ml-0 lg:leading-loose">
