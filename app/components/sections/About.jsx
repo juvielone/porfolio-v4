@@ -13,11 +13,14 @@ const About = () => {
         />
       </div>
 
-      <div className="my-auto text-center ">
+      <div className="my-auto text-center lg:w-5/6">
         <h1 className="text-primary-100 font_heading font-bold text-3xl mt-5 lg:text-left lg:m-0 lg:text-6xl">
           About Me
         </h1>
-        <p className="font_content mt-12 md:text-lg lg:mt-16 lg:text-xl lg:text-left lg:w-5/6">
+        <p
+          className="font_content w-96 mx-auto mt-12 md:text-lg lg:mx-0
+         lg:mt-16 lg:text-xl lg:text-left lg:w-5/6"
+        >
           <span className="text-primary-100 ">02. </span>
           I'm currently in my fourth year pursuing a BS in Information
           Technology at New Era University, Quezon City Manila. I enjoy creating
