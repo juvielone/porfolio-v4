@@ -2,7 +2,7 @@ import Socials from "../Socials";
 
 const Hero = () => {
   return (
-    <div className="grid lg:grid-cols-12 mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 lg:max-h-7xl pt-6  ">
+    <div className=" grid lg:grid-cols-12 mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 lg:max-h-7xl pt-6  ">
       <div className=" text-center lg:text-left lg:mt-16 lg:col-span-11">
         <h1 className="text-primary-100 font_heading font-bold lg:text-6xl md:text-4xl text-3xl mt-5">
           Juvielone Joshua Lagos
