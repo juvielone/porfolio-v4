@@ -33,7 +33,7 @@ const ProjectContent = ({
             height={755}
           />
           {/* Icons -Mobile */}
-          <div className="ml-40 shrink-0 lg:hidden">
+          <div className="ml-28 shrink-0 lg:hidden">
             <TechIcons icons={icons} />
           </div>
           <Image
