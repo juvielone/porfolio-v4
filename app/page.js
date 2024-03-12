@@ -16,7 +16,7 @@ const Home = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 1200);
   }, []);
   return (
     <AnimatePresence>
@@ -26,13 +26,13 @@ const Home = () => {
         </motion.div>
       ) : (
         <>
-          <Test />
+          {/* <Test /> */}
           <Navbar />
-          <Hero />
-          <About />
+          {/* <Hero /> */}
+          {/* <About />
           <Experience />
           <Projects />
-          <Contact />
+          <Contact /> */}
         </>
       )}
     </AnimatePresence>

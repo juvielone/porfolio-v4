@@ -1,5 +1,11 @@
 "use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import {
+  logo_variant,
+  nav_link_container,
+  nav_link,
+} from "../animations/variants";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
@@ -33,7 +39,12 @@ export default function Example() {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <div className="flex flex-shrink-0 items-center">
+                <motion.div
+                  className="flex flex-shrink-0 items-center"
+                  variants={logo_variant}
+                  initial="hidden"
+                  animate="show"
+                >
                   <Image
                     className="w-32 md:w-32 lg:w-40 sm:h-14 "
                     src="/images/logo.svg"
@@ -41,25 +52,32 @@ export default function Example() {
                     width={800}
                     height={800}
                   />
-                </div>
+                </motion.div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 {/* Nav Links */}
                 <div className="relative ml-3">
                   <div className="hidden sm:ml-6 sm:block">
-                    <div className="flex space-x-4">
-                      {navigation.map((item) => (
-                        <a
-                          key={item.name}
-                          href={item.href}
-                          className="text-gray-700 hover:bg-gray-700 hover:text-white 
+                    <motion.div
+                      className="flex space-x-4"
+                      variants={nav_link_container}
+                      initial="hidden"
+                      animate="show"
+                    >
+                      {navigation &&
+                        navigation.map((item) => (
+                          <motion.a
+                            variants={nav_link}
+                            key={item.name}
+                            href={item.href}
+                            className="text-gray-700 hover:bg-gray-700 hover:text-white 
                           rounded-md px-3 py-2 text-lg font-medium"
-                          aria-current={item.current ? "page" : undefined}
-                        >
-                          {item.name}
-                        </a>
-                      ))}
-                    </div>
+                            aria-current={item.current ? "page" : undefined}
+                          >
+                            {item.name}
+                          </motion.a>
+                        ))}
+                    </motion.div>
                   </div>
                 </div>
               </div>

@@ -1,4 +1,4 @@
-// Loader Variants
+// Loader Variants ====================================
 export const main_svg_variant = {
   hidden: { opacity: 0, scale: 0.5 },
   show: {
@@ -10,8 +10,8 @@ export const main_svg_variant = {
     opacity: 0,
     y: "-40vh",
     x: "-40vw",
-    scale: "0.7",
-    transition: { duration: 0.3 },
+    scale: "0.5",
+    transition: { duration: 0.4 },
   },
 };
 
@@ -36,4 +36,30 @@ export const letter_variant = {
     opacity: 0,
   },
   show: { y: 0, opacity: 1, transition: { duration: 1.0, type: "spring" } },
+};
+
+// Navbar ============================================
+export const logo_variant = {
+  hidden: { opacity: 0, scale: 0.4 },
+  show: {
+    opacity: 1,
+    scale: 1,
+    transition: {},
+  },
+};
+
+export const nav_link_container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      delay: 0.5,
+      staggerChildren: 0.3,
+    },
+  },
+};
+
+export const nav_link = {
+  hidden: { opacity: 0, y: "40vh" },
+  show: { opacity: 1, y: 0 },
 };
