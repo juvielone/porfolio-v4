@@ -1,3 +1,6 @@
+"use client";
+import { motion, AnimatePresence } from "framer-motion";
+import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/sections/Hero";
 import About from "./components/sections/About";
@@ -5,19 +8,34 @@ import Experience from "./components/sections/Experience";
 import Projects from "./components/sections/Projects";
 import Contact from "./components/sections/Contact";
 import Test from "./components/sections/Test";
+import Loader from "./components/Loader";
 const Home = () => {
-  // <div className="bg-gray-300 md:bg-yellow-500 lg:bg-red-300 xl:bg-purple-300 2xl:bg-green-300">
-  //   </div>
+  const [loading, setLoading] = useState(true);
+
+  // Run Intro per refresh
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <About />
-      <Experience />
-      <Projects />
-      <Contact />
-      {/* <Test /> */}
-    </>
+    <AnimatePresence>
+      {loading ? (
+        <motion.div key="modal">
+          <Loader />
+        </motion.div>
+      ) : (
+        <>
+          <Test />
+          <Navbar />
+          <Hero />
+          <About />
+          <Experience />
+          <Projects />
+          <Contact />
+        </>
+      )}
+    </AnimatePresence>
   );
 };
 

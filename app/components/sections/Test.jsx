@@ -1,7 +1,11 @@
+"use client";
+import { motion } from "framer-motion";
 import React from "react";
 
-const Test = () => {
-  return <div className="h-screen mt-4 bg-red-300">Test</div>;
+const Test = ({ main, sub }) => {
+  // Variants
+
+  return <div className="h-screen bg-red-300">hello</div>;
 };
 
 export default Test;
