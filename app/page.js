@@ -10,7 +10,7 @@ import Contact from "./components/sections/Contact";
 import Test from "./components/sections/Test";
 import Loader from "./components/Loader";
 const Home = () => {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   // Run Intro per refresh
   useEffect(() => {
@@ -21,14 +21,14 @@ const Home = () => {
   return (
     <AnimatePresence>
       {loading ? (
-        <motion.div key="modal">
+        <motion.div key="Logo">
           <Loader />
         </motion.div>
       ) : (
         <>
           {/* <Test /> */}
           <Navbar />
-          {/* <Hero /> */}
+          <Hero />
           {/* <About />
           <Experience />
           <Projects />

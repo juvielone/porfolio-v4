@@ -63,3 +63,51 @@ export const nav_link = {
   hidden: { opacity: 0, y: "40vh" },
   show: { opacity: 1, y: 0 },
 };
+
+//Hero =============================================
+export const hero_container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      delay: 0.8,
+      duration: 0.5,
+      staggerChildren: 0.4,
+      delayChildren: 0,
+    },
+  },
+};
+export const content_variant = {
+  hidden: { opacity: 0, y: "10vh" },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5 },
+  },
+};
+export const social_line_variant = {
+  hidden: { pathLength: 0 },
+  show: {
+    pathLength: 1,
+    transition: { duration: 0.3 },
+  },
+};
+// Social Icons =========
+export const social_container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.4, // Adjust the stagger duration as needed
+    },
+  },
+};
+export const social_variant = {
+  hidden: { opacity: 0, y: "10vh", x: "-10vw" },
+  show: {
+    opacity: 1,
+    y: 0,
+    x: 0,
+    transition: { duration: 0.7 },
+  },
+};
