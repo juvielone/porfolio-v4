@@ -29,10 +29,10 @@ const Home = () => {
           {/* <Test /> */}
           <Navbar />
           <Hero />
-          {/* <About />
-          <Experience />
-          <Projects />
-          <Contact /> */}
+          <About />
+          {/* <Experience /> */}
+          {/* <Projects /> */}
+          {/* <Contact /> */}
         </>
       )}
     </AnimatePresence>

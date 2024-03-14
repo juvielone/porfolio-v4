@@ -1,9 +1,22 @@
+import { motion } from "framer-motion";
+import {
+  about_container,
+  about_profile,
+  about_content,
+} from "../../animations/variants";
 import Image from "next/image";
 import Tabs from "../AboutTabs";
+
 const About = () => {
   return (
-    <div className=" grid pb-20 mt-20  lg:grid-cols-2 lg:mt-20 lg:pb-44">
-      <div className="mx-auto my-auto">
+    <motion.div
+      className=" grid pb-20 mt-20  lg:grid-cols-2 lg:mt-20 lg:pb-44"
+      variants={about_container}
+      initial="hidden"
+      whileInView="show"
+    >
+      {/* Profile Image */}
+      <motion.div className="mx-auto my-auto" variants={about_profile}>
         <Image
           className="w-36 h-34 rounded-full lg:h-92 lg:w-2/3 lg:ml-12"
           src="/images/leme.jpg"
@@ -11,15 +24,20 @@ const About = () => {
           width={400}
           height={540}
         />
-      </div>
+      </motion.div>
 
-      <div className="my-auto text-center lg:w-5/6">
-        <h1 className="text-primary-100 font_heading font-bold text-3xl mt-5 lg:text-left lg:m-0 lg:text-6xl">
+      <motion.div className="my-auto text-center lg:w-5/6">
+        <motion.h1
+          className="text-primary-100 font_heading
+        font-bold text-3xl mt-5 lg:text-left lg:m-0 lg:text-6xl"
+          variants={about_content}
+        >
           About Me
-        </h1>
-        <p
+        </motion.h1>
+        <motion.p
           className="font_content w-96 mx-auto mt-12 md:text-lg lg:mx-0
-         lg:mt-16 lg:text-xl lg:text-left lg:w-5/6"
+          lg:mt-16 lg:text-xl lg:text-left lg:w-5/6"
+          variants={about_content}
         >
           <span className="text-primary-100 ">02. </span>
           I'm currently in my fourth year pursuing a BS in Information
@@ -27,10 +45,10 @@ const About = () => {
           and designing things that live on the internet. I have a deep
           understanding of modern design principles that are effective for
           enhancing the human experience.
-        </p>
+        </motion.p>
         <Tabs />
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

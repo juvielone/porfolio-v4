@@ -111,3 +111,30 @@ export const social_variant = {
     transition: { duration: 0.7 },
   },
 };
+
+//About =============================================
+export const about_container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      delay: 0.3,
+      duration: 0.4,
+      staggerChildren: 0.5,
+    },
+  },
+};
+export const about_profile = {
+  hidden: { opacity: 0, y: "100vh" },
+  show: { opacity: 1, y: 0, transition: { duration: 1 } },
+};
+
+export const about_content = {
+  hidden: { opacity: 0, y: "10vh" },
+  show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+};
+
+export const about_tab = {
+  hidden: { opacity: 0, y: "30vh" },
+  show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+};

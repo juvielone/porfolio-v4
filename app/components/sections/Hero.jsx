@@ -15,7 +15,7 @@ const Hero = () => {
 
   return (
     <motion.div
-      className=" grid lg:grid-cols-12 mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 lg:max-h-7xl pt-6"
+      className=" grid w-screen lg:grid-cols-12 mx-auto lg:max-w-7xl px-2 sm:px-6 lg:px-8 lg:max-h-7xl pt-6"
       variants={hero_container}
       initial="hidden"
       animate="show"
@@ -45,12 +45,13 @@ const Hero = () => {
         </motion.p>
 
         <motion.div
-          className="mt-14 pb-10 lg:pb-16 font_content flex"
+          className="mt-14 pb-10 lg:pb-16 font_content lg:flex"
           variants={content_variant}
         >
+          {/* View Proj Btn */}
           <motion.button
             className="bg-primary-100 hover:bg-primary-200 text-white font-bold 
-            py-4 px-4 border border-transparent rounded w-48 flex"
+            mx-auto py-4 px-4 border border-transparent rounded w-48 flex lg:mx-0"
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.9 }}
             onMouseEnter={() => setBtnOneHover(true)}
@@ -64,11 +65,13 @@ const Hero = () => {
               <BeakerIcon className="h-6 w-6 text-white" />
             </motion.span>
           </motion.button>
+
+          {/* Resume Btn */}
           <motion.button
             className="bg-transparent hover:bg-primary-100
            text-primary-100 font-semibold w-48 hover:text-white
             py-4 px-4 border border-primary-100 hover:border-transparent rounded
-            ml-10 flex"
+            mx-auto mt-3 flex lg:ml-10 lg:my-0"
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.9 }}
             onMouseEnter={() => setBtnTwoHover(true)}
