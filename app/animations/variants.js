@@ -122,11 +122,44 @@ export const about_container = {
       duration: 0.4,
       staggerChildren: 0.5,
     },
+    exit: { opacity: 0, transition: { duration: 0.3 } },
   },
 };
 export const about_profile = {
-  hidden: { opacity: 0, y: "100vh" },
-  show: { opacity: 1, y: 0, transition: { duration: 1 } },
+  hidden: { opacity: 0, y: "50vh" },
+  show: { opacity: 1, y: 0, transition: { duration: 0.9 } },
+  exit: { opacity: 0, transition: { duration: 0.3 } },
+};
+
+export const icon_container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      delay: 0.3,
+      duration: 0.4,
+      staggerChildren: 0.4,
+    },
+  },
+  exit: { opacity: 0, transition: { duration: 0.3 } },
+};
+
+export const icon_stagger = {
+  show: {
+    transition: {
+      staggerChildren: 0.3, // Adjust the stagger duration as needed
+    },
+  },
+};
+
+export const icon_item = {
+  hidden: { opacity: 0, top: "12px" },
+  show: {
+    opacity: 1,
+    top: "220px",
+    transition: { duration: 0.8, ease: "easeOut" },
+  },
+  exit: { opacity: 0, transition: { duration: 0.6 } },
 };
 
 export const about_content = {

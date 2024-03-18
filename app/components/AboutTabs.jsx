@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Tab } from "@headlessui/react";
 import { about_tab } from "../animations/variants";
 import classNames from "classnames";
-const Tabs = () => {
+const Tabs = ({ setCurrentIcons, webdev, languages, other, updateIcons }) => {
   return (
     <motion.div
       className="mt-12 font_content md:text-lg lg:text-lg
@@ -13,6 +13,7 @@ const Tabs = () => {
       <Tab.Group>
         <Tab.List className="grid grid-cols-3 font-bold ">
           <Tab
+            onClick={() => setCurrentIcons(webdev)}
             className={({ selected }) =>
               classNames(
                 selected && "border-4 border-white border-b-primary-100 "
@@ -23,6 +24,7 @@ const Tabs = () => {
           </Tab>
 
           <Tab
+            onClick={() => updateIcons("languages")}
             className={({ selected }) =>
               classNames(
                 selected && "border-4 border-white border-b-primary-100 "
@@ -33,6 +35,7 @@ const Tabs = () => {
           </Tab>
 
           <Tab
+            onClick={() => updateIcons("other")}
             className={({ selected }) =>
               classNames(
                 selected && "border-4 border-white border-b-primary-100 "
