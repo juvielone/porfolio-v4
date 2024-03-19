@@ -26,7 +26,7 @@ const About = () => {
 
   return (
     <motion.div
-      className=" grid pb-20 mt-20  lg:grid-cols-2 lg:mt-28 lg:pb-44"
+      className=" grid pb-20 mt-20  lg:grid-cols-2 lg:mt-28 lg:pb-40"
       variants={about_container}
       initial="hidden"
       whileInView="show"
