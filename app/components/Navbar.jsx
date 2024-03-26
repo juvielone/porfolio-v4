@@ -24,7 +24,7 @@ export default function Example() {
     <Disclosure as="nav" className="bg-inherit font_heading">
       {({ open }) => (
         <>
-          <div className="mx-auto w-screen lg:max-w-7xl px-2 sm:px-6 lg:px-8 lg:mt-11 pt-8">
+          <div className=" bg-blue-200 mx-auto w-full sm:px-6 lg:px-8 lg:pt-12 pt-8">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}

@@ -29,9 +29,9 @@ const Home = () => {
           {/* <Test /> */}
           <Navbar />
           <Hero />
-          <About />
-          <Experience />
-          <Projects />
+          {/* <About /> */}
+          {/* <Experience /> */}
+          {/* <Projects /> */}
           {/* <Contact /> */}
         </>
       )}

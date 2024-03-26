@@ -89,7 +89,7 @@ export const social_line_variant = {
   hidden: { pathLength: 0 },
   show: {
     pathLength: 1,
-    transition: { duration: 0.3 },
+    transition: { delay:0.2, duration: 0.8 },
   },
 };
 // Social Icons =========

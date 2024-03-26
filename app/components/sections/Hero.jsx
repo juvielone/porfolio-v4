@@ -15,7 +15,7 @@ const Hero = () => {
 
   return (
     <motion.div
-      className=" grid w-screen lg:grid-cols-12 mx-auto lg:max-w-7xl px-2 sm:px-6 lg:px-8 lg:max-h-7xl pt-6"
+      className="bg-red-200 grid w-full lg:grid-cols-12 mx-auto px-2 sm:px-6  lg:max-h-7xl pt-6"
       variants={hero_container}
       initial="hidden"
       animate="show"
@@ -89,11 +89,13 @@ const Hero = () => {
       </div>
 
       {/* Socials Links (Large Devices) */}
-      <motion.div className="hidden lg:block lg:absolute p-10 inset-y-0 right-0 items-center pr-2 mr-12 mt-96">
+      <motion.div className="hidden lg:block lg:absolute p-10 mt-44 right-0 items-center pr-2 mr-12 ">
         <Socials setting="lg:space-y-4" />
         <motion.svg className=" w-1.5 h-20 ml-3 mt-6">
           <motion.line
             variants={social_line_variant}
+            initial="hidden"
+            whileInView="show"
             className="stroke-gray-700 stroke-[18px]"
             x1="0"
             y1="0"
