@@ -46,7 +46,7 @@ export const Timeline = () => {
         x2="12.1484"
         y2="350.098"
         stroke="#222831"
-        stroke-width="2"
+        strokeWidth="2"
       />
       <motion.ellipse
         initial="hidden"
@@ -73,7 +73,7 @@ export const Timeline = () => {
         x2="12.1484"
         y2="605.557"
         stroke="#222831"
-        stroke-width="2"
+        strokeWidth="2"
       />
     </motion.svg>
   );

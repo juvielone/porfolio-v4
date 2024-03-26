@@ -11,7 +11,7 @@ import {
 const Experience = () => {
   return (
     <motion.div
-      className="mt-24 lg:mt-28 bg-red-200 w-full"
+      className="mt-24 lg:mt-28  w-full"
       variants={exp_container}
       initial="hidden"
       whileInView="show"

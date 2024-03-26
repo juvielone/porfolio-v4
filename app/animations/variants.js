@@ -89,7 +89,7 @@ export const social_line_variant = {
   hidden: { pathLength: 0 },
   show: {
     pathLength: 1,
-    transition: { delay:0.2, duration: 0.8 },
+    transition: { delay: 0.2, duration: 0.8 },
   },
 };
 // Social Icons =========
@@ -194,4 +194,24 @@ export const timeline_side_left = {
 export const timeline_side_right = {
   hidden: { opacity: 0, y: "-10vh" },
   show: { opacity: 1, y: 0, transition: { duration: 0.3 } },
+};
+
+//Projects =============================================
+
+export const proj_container = {
+  hidden: { opacity: 0 },
+  show: { opacity: 1, transition: { duration: 0.7, staggerChildren: 0.3 } },
+};
+export const proj_heading = {
+  hidden: { y: "18vh" },
+  show: { y: 0, transition: { duration: 0.7 } },
+};
+
+export const proj_slide = {
+  hidden: { opacity: 0, y: "15vh" },
+  show: { opacity: 1, y: 0, transition: { duration: 0.9 } },
+};
+export const proj_rotate = {
+  hidden: { opacity: 0, rotate: 10 },
+  show: { opacity: 1, rotate: 0, transition: { duration: 0.3 } },
 };

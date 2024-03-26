@@ -1,5 +1,11 @@
 import Image from "next/image";
 import TechIcons from "./TechIcons";
+import { motion } from "framer-motion";
+import {
+  proj_container,
+  proj_slide,
+  proj_rotate,
+} from "../animations/variants";
 
 const ProjectContent = ({
   imageOrder,
@@ -13,37 +19,55 @@ const ProjectContent = ({
   return (
     <>
       {/* Desc */}
-      <div className="w-96 mx-auto mt-12 lg:mr-0 lg:mt-0 lg:ml-52">
-        <h1 className="font_subheading font-bold">{title}</h1>
-        <h2 className="font_subheading italic mt-5">{subtitle}</h2>
-        <p className="font_content mt-5 lg:w-96">{content}</p>
+      <motion.div
+        className=" mx-auto mt-12 lg:mr-0 lg:mt-0 lg:ml-52"
+        variants={proj_container}
+        initial="hidden"
+        whileInView="show"
+      >
+        <motion.h1 variants={proj_slide} className="font_subheading font-bold">
+          {title}
+        </motion.h1>
+        <motion.h2
+          variants={proj_slide}
+          className="font_subheading italic mt-5"
+        >
+          {subtitle}
+        </motion.h2>
+        <motion.p variants={proj_slide} className="font_content mt-5 lg:w-96">
+          {content}
+        </motion.p>
         {/* Icons - Desktop*/}
-        <div className="hidden lg:block mt-12">
+        <motion.div className="hidden lg:block mt-12">
           <TechIcons icons={icons} />
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
       {/* Proj Images & Buttons*/}
-      <div className={imageOrder}>
-        <div className="mt-5 mx-auto relative grid lg:mt-0 lg:grid-cols-4 lg:ml-20">
-          <Image
-            className="w-96 col-span-3 mx-auto lg:w-auto lg:h-80 lg:mt-1"
-            src={imageOne}
-            alt="user_image"
-            width={1086}
-            height={755}
-          />
+      <motion.div className={imageOrder}>
+        <motion.div className="mt-5 mx-auto relative grid lg:mt-0 lg:grid-cols-4 ">
+          <motion.span className="col-span-3" variants={proj_rotate}>
+            <Image
+              className="w-96 mx-auto lg:w-auto lg:h-80 lg:mt-1 lg:ml-5"
+              src={imageOne}
+              alt="user_image"
+              width={1086}
+              height={755}
+            />
+          </motion.span>
           {/* Icons -Mobile */}
           <div className="ml-28 shrink-0 lg:hidden">
             <TechIcons icons={icons} />
           </div>
-          <Image
-            className="hidden lg:block lg:absolute lg:left-96 lg:top-4 lg:ml-12"
-            src={imageTwo}
-            alt="user_image"
-            width={200}
-            height={155}
-          />
-        </div>
+          <motion.span>
+            <Image
+              className="hidden lg:block lg:absolute lg:left-96 lg:top-4"
+              src={imageTwo}
+              alt="user_image"
+              width={200}
+              height={155}
+            />
+          </motion.span>
+        </motion.div>
         {/* Buttons */}
         <div className="mt-5 w-96 mx-auto grid grid-cols-2 gap-x-8 lg:mt-16">
           <button
@@ -88,7 +112,7 @@ const ProjectContent = ({
             </svg>
           </button>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

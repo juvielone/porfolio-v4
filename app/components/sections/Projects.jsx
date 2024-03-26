@@ -1,15 +1,22 @@
-import Image from "next/image";
+import { motion } from "framer-motion";
 import ProjectContent from "../ProjectContent";
+import { proj_container, proj_heading } from "../../animations/variants";
 
 const Projects = () => {
   return (
-    <div className="mt-44 pb-10">
-      <div
+    <motion.div
+      className="mt-44 pb-10"
+      variants={proj_container}
+      initial="hidden"
+      whileInView="show"
+    >
+      <motion.div
         className="text-primary-100 font_heading font-bold text-3xl
-      mt-5 text-center lg:m-0 lg:text-6xl"
+        mt-5 text-center lg:m-0 lg:text-6xl"
+        variants={proj_heading}
       >
         My Projects
-      </div>
+      </motion.div>
 
       <div className="mt-20 grid lg:grid-cols-2 lg:text-xl">
         <ProjectContent
@@ -52,7 +59,7 @@ const Projects = () => {
           imageTwo={"/images/projects/devfinder-mb.png"}
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
