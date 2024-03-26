@@ -1,46 +1,17 @@
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import { Timeline } from "@public/assets/Timeline";
-import { useRef } from "react";
+import {
+  exp_container,
+  exp_heading,
+  timeline_container,
+  timeline_side_left,
+  timeline_side_right,
+} from "../../animations/variants";
 
 const Experience = () => {
-  const exp_container = {
-    hidden: { opacity: 0 },
-    show: { opacity: 1, transition: { duration: 0.7 } },
-  };
-
-  const exp_heading = {
-    hidden: { y: "18vh" },
-    show: { y: 0, transition: { duration: 0.7 } },
-  };
-
-  const timeline_container = {
-    show: { transition: { staggerChildren: 0.5 } },
-  };
-  const timeline_side_left = {
-    hidden: { opacity: 0, x: "-18vw" },
-    show: { opacity: 1, x: 0, transition: { duration: 0.3 } },
-  };
-  const timeline_side_right = {
-    hidden: { opacity: 0, x: "18vw" },
-    show: { opacity: 1, x: 0, transition: { duration: 0.3 } },
-  };
-  const ref = useRef();
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start 100%", "0 0"],
-  });
-  const slide_right_scroll = {
-    x: useTransform(scrollYProgress, [1, 0], ["0%", "40%"]),
-    opacity: scrollYProgress,
-  };
-  const slide_left_scroll = {
-    x: useTransform(scrollYProgress, [1, 0], ["30%", "20%"]),
-    opacity: scrollYProgress,
-  };
   return (
     <motion.div
-      className="mt-24 lg:mt-28"
-      ref={ref}
+      className="mt-24 lg:mt-28 bg-red-200 w-full"
       variants={exp_container}
       initial="hidden"
       whileInView="show"
@@ -54,7 +25,7 @@ const Experience = () => {
       </motion.h1>
 
       <motion.div
-        className="grid max-w-7xl mt-20 mx-auto
+        className="grid w-full mt-20 mx-auto
        lg:grid-cols-2 lg:text-xl lg:pb-20"
         variants={timeline_container}
         initial="hidden"

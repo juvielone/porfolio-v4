@@ -171,3 +171,27 @@ export const about_tab = {
   hidden: { opacity: 0, y: "30vh" },
   show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
+
+//Experience =============================================
+
+export const exp_container = {
+  hidden: { opacity: 0 },
+  show: { opacity: 1, transition: { duration: 0.7 } },
+};
+
+export const exp_heading = {
+  hidden: { y: "18vh" },
+  show: { y: 0, transition: { duration: 0.7 } },
+};
+
+export const timeline_container = {
+  show: { transition: { staggerChildren: 0.5 } },
+};
+export const timeline_side_left = {
+  hidden: { opacity: 0, y: "-10vh" },
+  show: { opacity: 1, y: 0, transition: { duration: 0.3 } },
+};
+export const timeline_side_right = {
+  hidden: { opacity: 0, y: "-10vh" },
+  show: { opacity: 1, y: 0, transition: { duration: 0.3 } },
+};
