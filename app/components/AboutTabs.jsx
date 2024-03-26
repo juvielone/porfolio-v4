@@ -6,7 +6,7 @@ import classNames from "classnames";
 const Tabs = ({ setCurrentIcons, webdev, languages, other, updateIcons }) => {
   return (
     <motion.div
-      className="mt-12 font_content md:text-lg lg:text-lg
+      className="w-full mt-12 font_content md:text-lg lg:text-lg
      lg:w-5/6 lg:ml-3 lg:text-left lg:h-64"
       variants={about_tab}
     >

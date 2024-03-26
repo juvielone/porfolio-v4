@@ -39,7 +39,7 @@ const About = () => {
       >
         <motion.div>
           <Image
-            className="w-36 h-34 rounded-full lg:h-92 lg:w-2/3 lg:ml-12 "
+            className="w-36 h-34 rounded-full lg:h-92 lg:w-3/4 lg:ml-12 lg:mt-28"
             src="/images/profile.png"
             alt="user_image"
             width={400}
@@ -93,7 +93,7 @@ const About = () => {
       </motion.div>
 
       {/* Content */}
-      <motion.div className="my-auto text-center lg:w-5/6">
+      <motion.div className=" w-full my-auto text-center lg:w-5/6">
         <motion.h1
           className="text-primary-100 font_heading
         font-bold text-3xl mt-5 lg:text-left lg:m-0 lg:text-6xl"
@@ -102,7 +102,7 @@ const About = () => {
           About Me
         </motion.h1>
         <motion.p
-          className="font_content w-96 mx-auto mt-12 md:text-lg lg:mx-0
+          className="font_content w-full mx-auto mt-12 md:text-lg lg:mx-0
           lg:mt-16 lg:text-xl lg:text-left lg:w-5/6"
           variants={about_content}
         >

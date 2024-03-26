@@ -21,10 +21,9 @@
 
 .profile_icons {
   position: absolute;
-  left: 145px;
-  top: 220px;
+  left: 20%;
   list-style-type: none;
-  transform-origin: 100px;
+  transform-origin: 190%;
   transform: rotate(calc(var(--i) * (360deg / var(--j)))) translateX(300px);
 }
 
