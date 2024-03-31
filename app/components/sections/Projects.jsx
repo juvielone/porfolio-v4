@@ -5,6 +5,7 @@ import { proj_container, proj_heading } from "../../animations/variants";
 const Projects = () => {
   return (
     <motion.div
+      id="projects"
       className="mt-44 pb-10"
       variants={proj_container}
       initial="hidden"
@@ -29,6 +30,8 @@ const Projects = () => {
           icons={["nextdotjs", "tailwindcss", "mongodb"]}
           imageOne={"/images/projects/mockone-dt.png"}
           imageTwo={"/images/projects/mockone-mb.png"}
+          gitLink={"https://github.com/juvielone/nextjs-prompts"}
+          demoLink={"https://nextjs-prompts-kappa.vercel.app/"}
         />
       </div>
 
@@ -37,12 +40,14 @@ const Projects = () => {
           imageOrder={"lg:order-first"}
           title={"Daily Guide Advisor"}
           subtitle={"Powered with Google Maps API "}
-          content={` Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna
-        bibendum ultrices sagittis dictum massa. Viverra adipiscing sem odio
-        et tortor viverra.`}
+          content={`A web travel application using Google Maps. With Geolocation,
+           Google Maps API. Fetching restaurants, hotels, and attractions based on the
+            location from specialized Rapid APIs, data filtering, and much more`}
           icons={["react", "googlemaps", "mui"]}
           imageOne={"/images/projects/dailyguide-dt.png"}
           imageTwo={"/images/projects/dailyguide-mb.png"}
+          gitLink={"https://github.com/juvielone/travel_advisor"}
+          demoLink={"https://mydailyguide.netlify.app/"}
         />
       </div>
 
@@ -51,12 +56,14 @@ const Projects = () => {
           imageOrder={"lg:order-last"}
           title={"Devfinder"}
           subtitle={"Powered with Github API "}
-          content={` Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna
-        bibendum ultrices sagittis dictum massa. Viverra adipiscing sem odio
-        et tortor viverra.`}
+          content={`Devfinder is a web application that lets you search a piece of
+           github developer information such as location, company, and their newly
+            created repositories`}
           icons={["react", "github", "sass"]}
           imageOne={"/images/projects/devfinder-dt.png"}
           imageTwo={"/images/projects/devfinder-mb.png"}
+          gitLink={"https://github.com/juvielone/devfinder"}
+          demoLink={"https://devfinder-nine.vercel.app/"}
         />
       </div>
     </motion.div>

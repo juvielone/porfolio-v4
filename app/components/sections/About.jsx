@@ -26,6 +26,7 @@ const About = () => {
 
   return (
     <motion.div
+      id="aboutme"
       className=" grid pb-20 mt-20  lg:grid-cols-2 lg:mt-28 lg:pb-40"
       variants={about_container}
       initial="hidden"
@@ -39,7 +40,7 @@ const About = () => {
       >
         <motion.div>
           <Image
-            className="w-36 h-34 rounded-full lg:h-92 lg:w-3/4 lg:ml-12 lg:mt-28"
+            className="w-36 h-34 rounded-full lg:h-92 lg:w-3/4 lg:ml-12 lg:mt-20"
             src="/images/profile.png"
             alt="user_image"
             width={400}

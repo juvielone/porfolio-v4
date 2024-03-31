@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .font_heading {
   font-family: var(--font-montserrat);
 }
@@ -21,9 +25,9 @@
 
 .profile_icons {
   position: absolute;
-  left: 20%;
+  left: 10%;
   list-style-type: none;
-  transform-origin: 190%;
+  transform-origin: 290%;
   transform: rotate(calc(var(--i) * (360deg / var(--j)))) translateX(300px);
 }
 
