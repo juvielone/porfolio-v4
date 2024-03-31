@@ -63,9 +63,9 @@ const Experience = () => {
             Willis Towers Watson (WTW)
           </h2>
           <p className="font_content mt-5 lg:w-96">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna
-            bibendum ultrices sagittis dictum massa. Viverra adipiscing sem
-            odioet tortor viverra.
+            I have managed deployments and production environments, led fellow
+            interns, and adapted Scrum methodologies, while also introducing new
+            APIs, fixing bugs, and updating documentation within the project
           </p>
         </motion.div>
 
@@ -81,9 +81,9 @@ const Experience = () => {
             Achieve Without Borders (AWB)
           </h2>
           <p className="font_content mt-5 lg:w-96">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna
-            bibendum ultrices sagittis dictum massa. Viverra adipiscing sem
-            odioet tortor viverra.
+            I handle bug fixing for both mobile and desktop platforms, while
+            also leading co-interns using Scrum methodologies. I collaborate
+            with dev seniors to develop and integrate new features.
           </p>
         </motion.div>
 

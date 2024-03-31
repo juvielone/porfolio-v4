@@ -49,42 +49,46 @@ const Hero = () => {
           variants={content_variant}
         >
           {/* View Proj Btn */}
-          <motion.button
-            className="bg-primary-100 hover:bg-primary-200 text-white font-bold 
+          <a href="#projects">
+            <motion.button
+              className="bg-primary-100 hover:bg-primary-200 text-white font-bold 
             mx-auto py-4 px-4 border border-transparent rounded w-48 flex lg:mx-0"
-            whileHover={{ scale: 1.04 }}
-            whileTap={{ scale: 0.9 }}
-            onMouseEnter={() => setBtnOneHover(true)}
-            onMouseLeave={() => setBtnOneHover(false)}
-          >
-            View Projects
-            <motion.span
-              className="ml-3"
-              animate={btnOneHover ? { rotate: -20 } : {}}
+              whileHover={{ scale: 1.04 }}
+              whileTap={{ scale: 0.9 }}
+              onMouseEnter={() => setBtnOneHover(true)}
+              onMouseLeave={() => setBtnOneHover(false)}
             >
-              <BeakerIcon className="h-6 w-6 text-white" />
-            </motion.span>
-          </motion.button>
+              View Projects
+              <motion.span
+                className="ml-3"
+                animate={btnOneHover ? { rotate: -20 } : {}}
+              >
+                <BeakerIcon className="h-6 w-6 text-white" />
+              </motion.span>
+            </motion.button>
+          </a>
 
           {/* Resume Btn */}
-          <motion.button
-            className="bg-transparent hover:bg-primary-100
+          <a href="#projects">
+            <motion.button
+              className="bg-transparent hover:bg-primary-100
            text-primary-100 font-semibold w-48 hover:text-white
             py-4 px-4 border border-primary-100 hover:border-transparent rounded
             mx-auto mt-3 flex lg:ml-10 lg:my-0"
-            whileHover={{ scale: 1.04 }}
-            whileTap={{ scale: 0.9 }}
-            onMouseEnter={() => setBtnTwoHover(true)}
-            onMouseLeave={() => setBtnTwoHover(false)}
-          >
-            View Resume
-            <motion.span
-              className="ml-3"
-              animate={btnTwoHover ? { scale: 1.06 } : {}}
+              whileHover={{ scale: 1.04 }}
+              whileTap={{ scale: 0.9 }}
+              onMouseEnter={() => setBtnTwoHover(true)}
+              onMouseLeave={() => setBtnTwoHover(false)}
             >
-              <FolderOpenIcon className="h-6 w-6 " />
-            </motion.span>
-          </motion.button>
+              View Resume
+              <motion.span
+                className="ml-3"
+                animate={btnTwoHover ? { scale: 1.06 } : {}}
+              >
+                <FolderOpenIcon className="h-6 w-6 " />
+              </motion.span>
+            </motion.button>
+          </a>
         </motion.div>
       </div>
 

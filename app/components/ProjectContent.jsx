@@ -73,7 +73,9 @@ const ProjectContent = ({
         {/* Buttons */}
         <div className="mt-5 w-96 mx-auto grid grid-cols-2 gap-x-8 lg:mt-16">
           <a href={gitLink} target="_blank">
-            <button
+            <motion.button
+              whileHover={{ scale: 1.04 }}
+              whileTap={{ scale: 0.9 }}
               className="bg-gray-700 hover:bg-gray-600 text-white font-bold 
           py-2 px-2 border border-transparent rounded w-40 flex gap-4"
             >
@@ -90,11 +92,13 @@ const ProjectContent = ({
                   </svg>
                 </svg>
               </span>
-            </button>
+            </motion.button>
           </a>
 
           <a href={demoLink} target="_blank">
-            <button
+            <motion.button
+              whileHover={{ scale: 1.04 }}
+              whileTap={{ scale: 0.9 }}
               className="bg-transparent hover:bg-gray-600
            text-gray-700 font-semibold w-40 hover:text-white
             py-2 px-2 border border-gray-700 hover:border-transparent rounded
@@ -116,7 +120,7 @@ const ProjectContent = ({
                   d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
                 />
               </svg>
-            </button>
+            </motion.button>
           </a>
         </div>
       </motion.div>

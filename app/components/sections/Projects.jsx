@@ -24,9 +24,9 @@ const Projects = () => {
           imageOrder={"lg:order-last"}
           title={"Share Prompt"}
           subtitle={"Full Stack Development"}
-          content={` Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna
-        bibendum ultrices sagittis dictum massa. Viverra adipiscing sem odio
-        et tortor viverra.`}
+          content={`A full-stack application that enables users to discover and share creative prompts, 
+          featuring CRUD functionality integrated with Google Sign-In. 
+          It allows users to filter, tag, copy, and paste prompts.`}
           icons={["nextdotjs", "tailwindcss", "mongodb"]}
           imageOne={"/images/projects/mockone-dt.png"}
           imageTwo={"/images/projects/mockone-mb.png"}
