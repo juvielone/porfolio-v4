@@ -51,8 +51,8 @@ const Contact = () => {
       mx-auto mt-12 lg:text-xl"
         variants={cnt_content}
       >
-        Hi, I’m currently looking for any new opportunities, my inbox is <br />
-        always open. Whether you have a question or just want to say hi, <br />
+        Hello, I’m currently exploring new opportunities and my inbox is always
+        open for inquiries, or even just a friendly hello. <br />
         I’ll try my best to get back to you!
       </motion.p>
 

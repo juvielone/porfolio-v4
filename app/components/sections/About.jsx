@@ -101,18 +101,28 @@ const About = () => {
         >
           About Me
         </motion.h1>
-        <motion.p
-          className="font_content w-full mx-auto mt-12 md:text-lg lg:mx-0
-          lg:mt-16 lg:text-xl lg:text-left lg:w-5/6"
-          variants={about_content}
+        <p
+          className="font_content w-full mx-auto  md:text-lg lg:mx-0
+           lg:text-xl lg:text-left lg:w-5/6"
         >
-          <span className="text-primary-100 ">02. </span>
-          I'm currently in my fourth year pursuing a BS in Information
-          Technology at New Era University, Quezon City Manila. I enjoy creating
-          and designing things that live on the internet. I have a deep
-          understanding of modern design principles that are effective for
-          enhancing the human experience.
-        </motion.p>
+          <motion.p className="mt-12 lg:mt-16" variants={about_content}>
+            <span className="text-primary-100 ">02. </span>
+            Hello! You can call me Juvie, and I enjoy creating and designing
+            things on the web. My goal is to bring new ideas to the table and
+            provide a unique approach that offers an efficient and creative user
+            experience.
+            <br />
+          </motion.p>
+          <motion.p className=" mt-2 lg:mt-5" variants={about_content}>
+            <strong>Beyond the screen,</strong> my adventures range from hiking
+            to cafe hopping. And sometimes, I manage to do both in one day!
+            Hahaha.
+          </motion.p>
+          <motion.p className="mt-2 lg:mt-5" variants={about_content}>
+            Here are a few technologies I’ve been working:
+          </motion.p>
+        </p>
+
         <Tabs
           setCurrentIcons={setCurrentIcons}
           webdev={webdev}
