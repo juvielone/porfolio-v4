@@ -212,6 +212,6 @@ export const proj_slide = {
   show: { opacity: 1, y: 0, transition: { duration: 0.9 } },
 };
 export const proj_rotate = {
-  hidden: { opacity: 0, rotate: 10 },
-  show: { opacity: 1, rotate: 0, transition: { delay: 0.3, duration: 0.3 } },
+  hidden: { opacity: 0, y: "15vh" },
+  show: { opacity: 1, y: 0, transition: { delay: 0.3, duration: 0.3 } },
 };
