@@ -15,7 +15,7 @@ const Hero = () => {
 
   return (
     <motion.div
-      className="bg-red-200 grid w-full lg:grid-cols-12 mx-auto px-2 sm:px-6  lg:max-h-7xl pt-6"
+      className="grid w-full lg:grid-cols-12 mx-auto px-2 sm:px-6  lg:max-h-7xl pt-6"
       variants={hero_container}
       initial="hidden"
       animate="show"

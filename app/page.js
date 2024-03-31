@@ -10,7 +10,7 @@ import Contact from "./components/sections/Contact";
 import Test from "./components/sections/Test";
 import Loader from "./components/Loader";
 const Home = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   // Run Intro per refresh
   useEffect(() => {
@@ -32,7 +32,7 @@ const Home = () => {
           <About />
           <Experience />
           <Projects />
-          {/* <Contact /> */}
+          <Contact />
         </>
       )}
     </AnimatePresence>
