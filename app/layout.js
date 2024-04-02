@@ -1,4 +1,5 @@
 import "@styles/global.css";
+import Head from "next/head";
 import { Merriweather, Montserrat, Raleway } from "next/font/google";
 
 // Google Fonts
@@ -18,18 +19,23 @@ const raleway = Raleway({
 });
 
 export const metadata = {
-  title: "JJ Dev",
+  title: "Juvielone Lagos",
   description: "My own portfolio",
 };
 
 const RootLayout = ({ children }) => {
   return (
-    <html
-      lang="en"
-      className={`${montserrat.variable} ${merriweather.variable} ${raleway.variable}`}
-    >
-      <body>{children}</body>
-    </html>
+    <>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <html
+        lang="en"
+        className={`${montserrat.variable} ${merriweather.variable} ${raleway.variable}`}
+      >
+        <body>{children}</body>
+      </html>
+    </>
   );
 };
 
