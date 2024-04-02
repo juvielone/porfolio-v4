@@ -69,7 +69,10 @@ const Hero = () => {
           </a>
 
           {/* Resume Btn */}
-          <a href="#projects">
+          <a
+            href="https://drive.google.com/file/d/13BBiEWRoEuMnCAN7i8lRsvQCaacDl3dL/view"
+            target="_blank"
+          >
             <motion.button
               className="bg-transparent hover:bg-primary-100
            text-primary-100 font-semibold w-48 hover:text-white

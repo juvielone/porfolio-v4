@@ -33,6 +33,7 @@ const Contact = () => {
   const [hover, setHover] = useState(false);
   return (
     <motion.div
+      id="contact"
       className="mt-20 lg:mt-32"
       variants={cnt_container}
       initial="hidden"
@@ -57,32 +58,33 @@ const Contact = () => {
       </motion.p>
 
       <motion.div className="mt-14 w-fit mx-auto pb-10 lg:pb-16 font_content">
-        <motion.button
-          className="bg-primary-100 hover:bg-primary-200 text-white font-bold 
+        <a href="mailto: juvielonejoshua27@gmail.com" target="_blank">
+          <motion.button
+            className="bg-primary-100 hover:bg-primary-200 text-white font-bold 
           py-4 px-4 border border-transparent rounded w-40 flex gap-4"
-          variants={cnt_btn}
-          onMouseOver={() => setHover(true)}
-          onMouseOut={() => setHover(false)}
-        >
-          Say Hello
-          <motion.svg
-            animate={hover ? cnt_bnt_icon : {}}
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6"
+            variants={cnt_btn}
+            onMouseOver={() => setHover(true)}
+            onMouseOut={() => setHover(false)}
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
-            />
-          </motion.svg>
-        </motion.button>
+            Say Hello
+            <motion.svg
+              animate={hover ? cnt_bnt_icon : {}}
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
+              />
+            </motion.svg>
+          </motion.button>
+        </a>
       </motion.div>
-
       <Footer />
     </motion.div>
   );

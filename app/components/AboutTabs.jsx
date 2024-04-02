@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Tab } from "@headlessui/react";
 import { about_tab } from "../animations/variants";
 import classNames from "classnames";
-const Tabs = ({ setCurrentIcons, webdev, languages, other, updateIcons }) => {
+const Tabs = ({ setCurrentIcons, webdev, updateIcons }) => {
   return (
     <motion.div
       className="w-full mt-12 font_content md:text-lg lg:text-lg
@@ -16,18 +16,19 @@ const Tabs = ({ setCurrentIcons, webdev, languages, other, updateIcons }) => {
             onClick={() => setCurrentIcons(webdev)}
             className={({ selected }) =>
               classNames(
-                selected && "border-4 border-white border-b-primary-100 "
+                selected && "border-4 border-transparent border-b-primary-100 "
               )
             }
           >
-            Web Development
+            Development
           </Tab>
 
           <Tab
             onClick={() => updateIcons("languages")}
             className={({ selected }) =>
               classNames(
-                selected && "border-4 border-white border-b-primary-100 "
+                //underline-offset-8
+                selected && "border-4 border-transparent border-b-primary-100"
               )
             }
           >
@@ -38,7 +39,7 @@ const Tabs = ({ setCurrentIcons, webdev, languages, other, updateIcons }) => {
             onClick={() => updateIcons("other")}
             className={({ selected }) =>
               classNames(
-                selected && "border-4 border-white border-b-primary-100 "
+                selected && "border-4 border-transparent border-b-primary-100"
               )
             }
           >
