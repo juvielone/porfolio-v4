@@ -49,7 +49,7 @@ const About = () => {
         </motion.div>
 
         {/* Icons */}
-        <AnimatePresence>
+        {/* <AnimatePresence>
           <motion.div
             key={currentIcons.join("-")}
             className="hidden lg:block container_icons"
@@ -90,7 +90,7 @@ const About = () => {
               ))}
             </motion.ul>
           </motion.div>
-        </AnimatePresence>
+        </AnimatePresence> */}
       </motion.div>
 
       {/* Content */}

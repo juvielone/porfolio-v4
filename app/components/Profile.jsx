@@ -47,7 +47,7 @@ const Profile = () => {
         />
       </motion.div>
 
-      {/* <motion.div className="container_icons">
+      <motion.div className="container_icons">
         {icons.map((icon, index) => (
           <motion.li
             key={index}
@@ -66,7 +66,7 @@ const Profile = () => {
             </motion.span>
           </motion.li>
         ))}
-      </motion.div> */}
+      </motion.div>
     </motion.div>
   );
 };
