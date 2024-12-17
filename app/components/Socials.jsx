@@ -11,7 +11,7 @@ const Socials = ({ setting }) => {
     >
       {/* <div className={`${gridLayout && gridLayout }`}> */}
       {/*LinkedIn */}
-      <div>
+      <div className="b">
         <a href="https://www.linkedin.com/in/joshualagos/" target="_blank">
           <motion.svg
             variants={social_variant}
@@ -19,7 +19,7 @@ const Socials = ({ setting }) => {
               scale: 1.2,
               transition: { duration: 0.1 },
             }}
-            className="w-8 fill-gray-700 hover:fill-primary-100"
+            className="w-8 mx-auto fill-gray-700 hover:fill-primary-100"
             role="img"
             viewBox="0 0 24 24"
           >
@@ -37,7 +37,7 @@ const Socials = ({ setting }) => {
               scale: 1.2,
               transition: { duration: 0.1 },
             }}
-            className="w-8 fill-gray-700 hover:fill-primary-100"
+            className="w-8 mx-auto fill-gray-700 hover:fill-primary-100"
             role="img"
             viewBox="0 0 24 24"
           >
@@ -57,7 +57,7 @@ const Socials = ({ setting }) => {
               scale: 1.2,
               transition: { duration: 0.1 },
             }}
-            className="w-8 fill-gray-700 hover:fill-primary-100"
+            className="w-8 mx-auto fill-gray-700 hover:fill-primary-100"
             role="img"
             viewBox="0 0 24 24"
           >
@@ -81,7 +81,7 @@ const Socials = ({ setting }) => {
               scale: 1.2,
               transition: { duration: 0.1 },
             }}
-            className="w-8 fill-gray-700 hover:fill-primary-100"
+            className="w-8 mx-auto fill-gray-700 hover:fill-primary-100"
             role="img"
             viewBox="0 0 24 24"
           >

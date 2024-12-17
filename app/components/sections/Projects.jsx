@@ -24,6 +24,7 @@ const Projects = () => {
           imageOrder={"lg:order-last"}
           title={"Share Prompt"}
           subtitle={"Full Stack Development"}
+          contentDirection={false}
           content={`A full-stack application that enables users to discover and share creative prompts, 
           featuring CRUD functionality integrated with Google Sign-In. 
           It allows users to filter, tag, copy, and paste prompts.`}
@@ -64,6 +65,23 @@ const Projects = () => {
           imageTwo={"/images/projects/devfinder-mb.png"}
           gitLink={"https://github.com/juvielone/devfinder"}
           demoLink={"https://devfinder-nine.vercel.app/"}
+        />
+      </div>
+
+      <div className="mt-20 pb-20  grid lg:grid-cols-2 lg:text-xl">
+        <ProjectContent
+          imageOrder={"lg:order-last"}
+          title={"Broadtech Business Solutions"}
+          subtitle={"Frontend Development"}
+          content={`Broadtech Business Solutions is a responsive website designed 
+            for a telecommunications company. The project features custom styles,
+            animations, and content, inspired by modern user interface and user
+            experience principles.`}
+          icons={["nextdotjs", "tailwindcss"]}
+          imageOne={"/images/projects/broadtech-dt.png"}
+          imageTwo={"/images/projects/broadtech-mb.png"}
+          gitLink={"https://github.com/juvielone/broadtech"}
+          demoLink={"https://broadtech-solutions.vercel.app/"}
         />
       </div>
     </motion.div>

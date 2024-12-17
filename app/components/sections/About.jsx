@@ -34,13 +34,10 @@ const About = () => {
       exit="exit"
     >
       {/* Profile Image */}
-      <motion.div
-        className="mx-auto my-auto lg:h-screen "
-        variants={about_profile}
-      >
-        <motion.div>
+      <motion.div className=" w-full" variants={about_profile}>
+        <motion.div className=" w-2/3 mx-auto">
           <Image
-            className="w-36 h-34 rounded-full lg:h-92 lg:w-3/4 lg:ml-12 lg:mt-20"
+            className="w-36 h-34 rounded-full mx-auto lg:w-11/12 "
             src="/images/profile.png"
             alt="user_image"
             width={400}
@@ -94,7 +91,7 @@ const About = () => {
       </motion.div>
 
       {/* Content */}
-      <motion.div className=" w-full my-auto text-center lg:w-5/6">
+      <motion.div className=" w-full my-auto text-center lg:w-full">
         <motion.h1
           className="text-primary-100 font_heading
         font-bold text-3xl mt-5 lg:text-left lg:m-0 lg:text-6xl"
@@ -104,7 +101,7 @@ const About = () => {
         </motion.h1>
         <p
           className="font_content w-full mx-auto  md:text-lg lg:mx-0
-           lg:text-xl lg:text-left lg:w-5/6"
+           lg:text-xl lg:text-left"
         >
           <motion.p className="mt-12 lg:mt-16" variants={about_content}>
             <span className="text-primary-100 ">02. </span>
@@ -116,11 +113,11 @@ const About = () => {
           </motion.p>
           <motion.p className=" mt-2 lg:mt-5" variants={about_content}>
             <strong>Beyond the screen,</strong> my adventures range from hiking
-            to cafe hopping. And sometimes, I manage to do both in one day!
-            Hahaha.
+            to cafe hopping. When I'm not exploring the outdoors, I’m diving
+            into technologies that help me bring ideas to life.
           </motion.p>
           <motion.p className="mt-2 lg:mt-5" variants={about_content}>
-            Here are a few technologies I’ve been working:
+            Here are a few tools I’ve been working with lately:
           </motion.p>
         </p>
 

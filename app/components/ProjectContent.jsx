@@ -9,6 +9,7 @@ import {
 
 const ProjectContent = ({
   imageOrder,
+  contentDirection,
   title,
   subtitle,
   content,
@@ -21,13 +22,17 @@ const ProjectContent = ({
   return (
     <>
       {/* Desc */}
+      {/* className=" mx-auto mt-12 lg:mr-0 lg:mt-0  w-full */}
       <motion.div
-        className=" mx-auto mt-12 lg:mr-0 lg:mt-0 lg:ml-52"
+        className={" lg:pl-10 mx-auto mt-12 lg:mr-0 lg:mt-0 w-full "}
         variants={proj_container}
         initial="hidden"
         whileInView="show"
       >
-        <motion.h1 variants={proj_slide} className="font_subheading font-bold">
+        <motion.h1
+          variants={proj_slide}
+          className="font_subheading font-bold w-fit"
+        >
           {title}
         </motion.h1>
         <motion.h2
@@ -36,7 +41,7 @@ const ProjectContent = ({
         >
           {subtitle}
         </motion.h2>
-        <motion.p variants={proj_slide} className="font_content mt-5 lg:w-96">
+        <motion.p variants={proj_slide} className="font_content mt-5 ">
           {content}
         </motion.p>
         {/* Icons - Desktop*/}

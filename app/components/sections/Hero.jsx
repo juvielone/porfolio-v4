@@ -15,14 +15,15 @@ const Hero = () => {
 
   return (
     <motion.div
-      className="grid w-full lg:grid-cols-12 mx-auto px-2 sm:px-6  lg:max-h-7xl pt-6"
+      className="grid w-full lg:grid-cols-12 mx-auto px-2 sm:px-6  lg:max-h-7xl py-8 mt-5"
       variants={hero_container}
       initial="hidden"
       animate="show"
     >
-      <div className=" text-center lg:text-left lg:mt-16 lg:col-span-11">
+      <div className=" text-center lg:text-left lg:mt-8 lg:col-span-11">
         <motion.h1
-          className="text-primary-100 font_heading font-bold lg:text-6xl md:text-4xl text-3xl mt-5"
+          className="text-primary-100 font_heading 
+          font-bold text-3xl md:text-4xl lg:text-5xl mt-5"
           variants={content_variant}
         >
           Juvielone Joshua Lagos
@@ -35,7 +36,7 @@ const Hero = () => {
           <span className="font-bold italic ">web developer</span>
         </motion.h3>
         <motion.p
-          className="font_content w-3/4 mx-auto mt-5 md:text-lg lg:text-xl lg:text-left lg:w-1/2 lg:ml-0 lg:leading-loose"
+          className="font_content w-3/4 mx-auto mt-5 md:text-lg lg:text-xl lg:text-left lg:w-2/3 lg:ml-0 lg:leading-loose"
           variants={content_variant}
         >
           <span className="text-primary-100">01.</span> A full stack web

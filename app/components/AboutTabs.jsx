@@ -63,6 +63,7 @@ const Tabs = ({ setCurrentIcons, webdev, updateIcons }) => {
           <Tab.Panel>
             <ul className="lg:list-disc">
               <li className="mt-3">Javascript</li>
+              <li className="mt-3">Python</li>
               <li className="mt-3">C#</li>
               <li className="mt-3">Java</li>
             </ul>
@@ -71,6 +72,7 @@ const Tabs = ({ setCurrentIcons, webdev, updateIcons }) => {
           <Tab.Panel>
             <ul className="lg:list-disc">
               <li className="mt-3">Microsoft Azure</li>
+              <li className="mt-3">AWS (Amazon Web Services)</li>
               <li className="mt-3">Power BI</li>
               <li className="mt-3">Figma</li>
             </ul>

@@ -9,6 +9,7 @@ import Projects from "./components/sections/Projects";
 import Contact from "./components/sections/Contact";
 import Test from "./components/sections/Test";
 import Loader from "./components/Loader";
+import Footer from "./components/Footer";
 const Home = () => {
   const [loading, setLoading] = useState(true);
 
@@ -28,11 +29,14 @@ const Home = () => {
         <>
           {/* <Test /> */}
           <Navbar />
-          <Hero />
-          <About />
-          <Experience />
-          <Projects />
-          <Contact />
+          <div className="w-11/12 mx-auto">
+            <Hero />
+            <About />
+            <Experience />
+            <Projects />
+            <Contact />
+          </div>
+          <Footer />
         </>
       )}
     </AnimatePresence>
