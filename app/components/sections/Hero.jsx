@@ -70,7 +70,7 @@ const Hero = () => {
           </a>
 
           {/* Resume Btn */}
-          <a href="https://bit.ly/40jXJnz" target="_blank">
+          <a href="https://bit.ly/42ZzvSk" target="_blank">
             <motion.button
               className="bg-transparent hover:bg-primary-100
            text-primary-100 font-semibold w-48 hover:text-white
