@@ -17,7 +17,7 @@ const Hero = () => {
     <motion.div
       className="grid w-full lg:grid-cols-12 
       mx-auto px-2 sm:px-6 py-8 
-      min-h-[calc(100vh-9.5rem)]"
+      min-h-[calc(100vh-9rem)]"
       variants={hero_container}
       initial="hidden"
       animate="show"
@@ -61,7 +61,7 @@ const Hero = () => {
           <a href="#projects">
             <motion.button
               className="bg-primary-100 hover:bg-primary-200 text-white font-bold 
-            mx-auto py-4 px-4 border border-transparent rounded w-48 flex lg:mx-0"
+            mx-auto py-4 px-4 border border-transparent rounded w-48 flex lg:mx-0 text-base"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.9 }}
               onMouseEnter={() => setBtnOneHover(true)}
@@ -105,20 +105,14 @@ const Hero = () => {
       </div>
 
       {/* Socials Links (Large Devices) */}
-      <motion.div className="hidden lg:block  p-10 mt-44 right-0 items-center pr-2 mr-12 ">
+      <motion.div className="hidden lg:block items-center w-fit mt-[5rem] 2xl:my-auto">
         <Socials setting="lg:space-y-4" />
-        <motion.svg className=" w-1.5 h-20 ml-3 mt-6">
-          <motion.line
-            variants={social_line_variant}
-            initial="hidden"
-            whileInView="show"
-            className="stroke-gray-700 stroke-[18px]"
-            x1="0"
-            y1="0"
-            x2="0"
-            y2="100"
-          />
-        </motion.svg>
+      </motion.div>
+      {/* Dropdown Pulse */}
+      <motion.div className="hidden lg:block absolute bottom-12 2xl:bottom-20 left-1/2 -translate-x-1/2 animate-bounce">
+        <motion.div className="w-6 h-10 rounded-full border-2 border-[#00ADB5] flex justify-center items-start p-1">
+          <motion.div className="w-1.5 h-1.5 rounded-full bg-primary-100 animate-pulse"></motion.div>
+        </motion.div>
       </motion.div>
 
       {/* Social Links(Small Devices) */}
