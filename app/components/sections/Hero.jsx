@@ -15,28 +15,36 @@ const Hero = () => {
 
   return (
     <motion.div
-      className="grid w-full lg:grid-cols-12 mx-auto px-2 sm:px-6  lg:max-h-7xl py-8 mt-5"
+      className="grid w-full lg:grid-cols-12 
+      mx-auto px-2 sm:px-6 py-8 
+      min-h-[calc(100vh-150px)]"
       variants={hero_container}
       initial="hidden"
       animate="show"
     >
-      <div className=" text-center lg:text-left lg:mt-8 lg:col-span-11">
+      <div
+        className="text-center lg:text-left
+       lg:col-span-11 h-fit my-auto "
+      >
+        {/* Hero Content */}
         <motion.h1
-          className="text-primary-100 font_heading 
-          font-bold text-3xl md:text-4xl lg:text-5xl mt-5"
+          className="text-primary-100 font_heading
+          font-bold text-[clamp(2rem,3.5vw,4rem)]"
           variants={content_variant}
         >
           Juvielone Joshua Lagos
         </motion.h1>
         <motion.h3
-          className="font_subheading text-xl mt-5"
+          className="font_subheading text-[clamp(1em,1vw,1.5rem)] mt-5"
           variants={content_variant}
         >
           [ joo-vee-lohn ]{" "}
-          <span className="font-bold italic ">web developer</span>
+          <span className="font-bold italic ">full-stack developer</span>
         </motion.h3>
         <motion.p
-          className="font_content w-3/4 mx-auto mt-5 md:text-lg lg:text-xl lg:text-left lg:w-2/3 lg:ml-0 lg:leading-loose"
+          className="font_content w-3/4 
+          mx-auto mt-5 text-[clamp(1rem,1vw,1.5rem)] lg:text-left lg:w-2/3 
+          lg:ml-0 lg:leading-loose"
           variants={content_variant}
         >
           <span className="text-primary-100">01.</span> A full stack web
@@ -44,7 +52,7 @@ const Hero = () => {
           pages through the web. I build and design modern intuitive websites
           and applications .
         </motion.p>
-
+        {/* Hero CTA */}
         <motion.div
           className="mt-14 pb-10 lg:pb-16 font_content lg:flex"
           variants={content_variant}
