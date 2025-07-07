@@ -17,14 +17,14 @@ const Hero = () => {
     <motion.div
       className="grid w-full lg:grid-cols-12 
       mx-auto px-2 sm:px-6 py-8 
-      min-h-[calc(100vh-150px)]"
+      min-h-[calc(100vh-9.5rem)]"
       variants={hero_container}
       initial="hidden"
       animate="show"
     >
       <div
         className="text-center lg:text-left
-       lg:col-span-11 h-fit my-auto "
+       lg:col-span-11 h-fit 2xl:my-auto "
       >
         {/* Hero Content */}
         <motion.h1
@@ -105,7 +105,7 @@ const Hero = () => {
       </div>
 
       {/* Socials Links (Large Devices) */}
-      <motion.div className="hidden lg:block lg:absolute p-10 mt-44 right-0 items-center pr-2 mr-12 ">
+      <motion.div className="hidden lg:block  p-10 mt-44 right-0 items-center pr-2 mr-12 ">
         <Socials setting="lg:space-y-4" />
         <motion.svg className=" w-1.5 h-20 ml-3 mt-6">
           <motion.line
