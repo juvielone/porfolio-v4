@@ -29,13 +29,13 @@ const Hero = () => {
         {/* Hero Content */}
         <motion.h1
           className="text-primary-100 font_heading
-          font-bold text-[clamp(2rem,3.5vw,4rem)]"
+          font-bold text-[clamp(2rem,4.5vw,4rem)]"
           variants={content_variant}
         >
           Juvielone Joshua Lagos
         </motion.h1>
         <motion.h3
-          className="font_subheading text-[clamp(1em,1vw,1.5rem)] mt-5"
+          className="font_subheading text-[clamp(1em,1.2vw,1.5rem)] mt-5"
           variants={content_variant}
         >
           [ joo-vee-lohn ]{" "}
@@ -43,7 +43,7 @@ const Hero = () => {
         </motion.h3>
         <motion.p
           className="font_content w-3/4 
-          mx-auto mt-5 text-[clamp(1rem,1vw,1.5rem)] lg:text-left lg:w-2/3 
+          mx-auto mt-5 text-[clamp(1rem,1.2vw,1.5rem)] lg:text-left lg:w-2/3 
           lg:ml-0 lg:leading-loose"
           variants={content_variant}
         >
