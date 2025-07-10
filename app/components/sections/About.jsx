@@ -99,7 +99,7 @@ const About = () => {
         >
           About Me
         </motion.h1>
-        <p
+        <div
           className="font_content w-full mx-auto  md:text-lg lg:mx-0
            lg:text-xl lg:text-left"
         >
@@ -119,7 +119,7 @@ const About = () => {
           <motion.p className="mt-2 lg:mt-5" variants={about_content}>
             Here are a few tools I’ve been working with lately:
           </motion.p>
-        </p>
+        </div>
 
         <Tabs
           setCurrentIcons={setCurrentIcons}

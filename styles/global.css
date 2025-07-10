@@ -38,3 +38,36 @@ html {
   align-items: center;
   transform: rotate(calc(360deg / (-1 * var(--j)) * var(--i)));
 }
+
+/* Circle layout and rotation */
+.container_icons {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+/* .profile_icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+} */
+
+.profile_icons {
+  transform: rotate(calc(var(--i) * (360deg / var(--j)))) translate(120px)
+    rotate(calc(var(--i) * (-360deg / var(--j))));
+}
+
+.container_icons.rotate {
+  animation: rotate-circle 20s linear infinite;
+}
+
+@keyframes rotate-circle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
