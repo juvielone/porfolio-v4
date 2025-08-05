@@ -5,7 +5,7 @@ import {
   proj_container,
   proj_slide,
   proj_rotate,
-} from "../animations/variants";
+} from "../../animations/variants";
 
 const ProjectContent = ({
   imageOrder,

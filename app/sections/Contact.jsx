@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import Footer from "../Footer";
+import Footer from "../components/custom/Footer";
 import { useState } from "react";
 
 const cnt_container = {

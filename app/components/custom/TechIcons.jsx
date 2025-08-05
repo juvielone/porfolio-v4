@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { proj_container, proj_slide } from "../animations/variants";
+import { proj_container, proj_slide } from "../../animations/variants";
 
 const TechIcons = ({ icons }) => {
   return (

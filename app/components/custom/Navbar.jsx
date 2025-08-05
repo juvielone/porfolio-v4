@@ -5,7 +5,7 @@ import {
   logo_variant,
   nav_link_container,
   nav_link,
-} from "../animations/variants";
+} from "../../animations/variants";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 

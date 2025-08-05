@@ -5,7 +5,7 @@ import {
   svg_tip_variant,
   svg_body_variant,
   letter_variant,
-} from "../animations/variants";
+} from "../../animations/variants";
 
 const Loader = ({ main, sub }) => {
   return (

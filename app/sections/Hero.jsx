@@ -4,10 +4,10 @@ import {
   hero_container,
   content_variant,
   social_line_variant,
-} from "../../animations/variants";
+} from "../animations/variants";
 import { BeakerIcon } from "@heroicons/react/24/solid";
 import { FolderOpenIcon } from "@heroicons/react/24/outline";
-import Socials from "../Socials";
+import Socials from "../components/custom/Socials";
 
 const Hero = () => {
   const [btnOneHover, setBtnOneHover] = useState(false);

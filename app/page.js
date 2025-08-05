@@ -1,15 +1,15 @@
 "use client";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
-import Navbar from "./components/Navbar";
-import Hero from "./components/sections/Hero";
-import About from "./components/sections/About";
-import Experience from "./components/sections/Experience";
-import Projects from "./components/sections/Projects";
-import Contact from "./components/sections/Contact";
-import Test from "./components/sections/Test";
-import Loader from "./components/Loader";
-import Footer from "./components/Footer";
+import Navbar from "./components/custom/Navbar";
+import Hero from "./sections/Hero";
+import About from "./sections/About";
+import Experience from "./sections/Experience";
+import Projects from "./sections/Projects";
+import Contact from "./sections/Contact";
+import Test from "./sections/Test";
+import Loader from "./components/custom/Loader";
+import Footer from "./components/custom/Footer";
 const Home = () => {
   const [loading, setLoading] = useState(true);
 

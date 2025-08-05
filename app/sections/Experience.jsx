@@ -6,7 +6,7 @@ import {
   timeline_container,
   timeline_side_left,
   timeline_side_right,
-} from "../../animations/variants";
+} from "../animations/variants";
 
 const Experience = () => {
   return (

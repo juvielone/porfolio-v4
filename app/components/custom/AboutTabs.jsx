@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { Tab } from "@headlessui/react";
-import { about_tab } from "../animations/variants";
+import { about_tab } from "../../animations/variants";
 import classNames from "classnames";
 const Tabs = ({ setCurrentIcons, webdev, updateIcons }) => {
   return (

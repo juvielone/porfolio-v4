@@ -8,9 +8,9 @@ import {
   icon_container,
   icon_stagger,
   icon_item,
-} from "../../animations/variants";
+} from "../animations/variants";
 import Image from "next/image";
-import Tabs from "../AboutTabs";
+import Tabs from "../components/custom/AboutTabs";
 
 const About = () => {
   const webdev = ["react", "nextdotjs", "dotnet", "tailwindcss", "mern"];

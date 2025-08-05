@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import ProjectContent from "../ProjectContent";
-import { proj_container, proj_heading } from "../../animations/variants";
+import ProjectContent from "../components/custom/ProjectContent";
+import { proj_container, proj_heading } from "../animations/variants";
 
 const Projects = () => {
   return (

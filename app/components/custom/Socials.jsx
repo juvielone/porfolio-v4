@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { social_container, social_variant } from "../animations/variants";
+import { social_container, social_variant } from "../../animations/variants";
 
 const Socials = ({ setting }) => {
   return (
