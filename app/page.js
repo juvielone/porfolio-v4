@@ -4,10 +4,10 @@ import { useState, useEffect } from "react";
 import Navbar from "./components/custom/Navbar";
 import Hero from "./sections/Hero";
 import About from "./sections/About";
-import Experience from "./sections/Experience";
+import ExperienceX from "./sections/ExperienceX";
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
-import Test from "./sections/Test";
+import Experience from "./sections/Experience";
 import Loader from "./components/custom/Loader";
 import Footer from "./components/custom/Footer";
 const Home = () => {
@@ -31,8 +31,8 @@ const Home = () => {
           <Navbar />
           <div className="w-11/12 mx-auto">
             <Hero />
-            <Test />
-            <About />
+            {/* <Test /> */}
+            {/* <About /> */}
             <Experience />
             <Projects />
             <Contact />
