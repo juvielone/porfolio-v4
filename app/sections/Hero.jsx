@@ -79,7 +79,7 @@ const Hero = () => {
 
           {/* Resume Btn */}
           <a
-            href="https://drive.google.com/file/d/1h13MkD4GqAtVkEZEWcAb_uDFwIYOsx0u/view?usp=sharing"
+            href="https://drive.google.com/file/d/17pO9GMMcsaR41F7MQ8XNK-1kc4iaGQ0a/view?usp=sharing"
             target="_blank"
           >
             <motion.button
