@@ -21,7 +21,8 @@
     "baseUrl": ".",
     "paths": {
       "@*": ["./*"],
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@headlessui/react": ["node_modules/@headlessui/react"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
