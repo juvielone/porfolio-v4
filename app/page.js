@@ -28,7 +28,7 @@ const Home = () => {
       ) : (
         <>
           {/* <Test /> */}
-          {/* <Navbar /> */}
+          <Navbar />
           <div className="w-11/12 mx-auto">
             <Hero />
             {/* <Test /> */}
