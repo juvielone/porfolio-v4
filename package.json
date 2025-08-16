@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@headlessui/react": "1.7.18",
+    "@headlessui/react": "2.2.7",
     "@heroicons/react": "2.1.1",
     "@radix-ui/react-slot": "^1.2.3",
     "@splinetool/react-spline": "^4.0.0",
