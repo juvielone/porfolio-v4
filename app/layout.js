@@ -1,5 +1,4 @@
 import "@styles/global.css";
-// import Head from "next/head";
 import { Merriweather, Montserrat, Raleway } from "next/font/google";
 
 // Google Fonts
@@ -29,9 +28,6 @@ export const metadata = {
 const RootLayout = ({ children }) => {
   return (
     <>
-      {/* <Head> */}
-      {/* <link rel="icon" href="/favicon.ico" /> */}
-      {/* </Head> */}
       <html
         lang="en"
         className={`${montserrat.variable} ${merriweather.variable} ${raleway.variable}`}
