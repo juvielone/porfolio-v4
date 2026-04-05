@@ -17,14 +17,14 @@ const Hero = () => {
     <motion.div
       className="grid w-full lg:grid-cols-12 
       mx-auto px-2 sm:px-6 py-8 
-      min-h-[calc(100vh-9rem)]"
+      min-h-[calc(100vh-9rem)] lg:w-[80vw]"
       variants={hero_container}
       initial="hidden"
       animate="show"
     >
       <div
         className="text-center lg:text-left
-       lg:col-span-11 h-fit 2xl:my-auto "
+       lg:col-span-10 h-fit 2xl:my-auto "
       >
         {/* Hero Content */}
         <motion.h1
@@ -39,18 +39,17 @@ const Hero = () => {
           variants={content_variant}
         >
           [ joo-vee-lohn ]{" "}
-          <span className="font-bold italic ">full-stack developer</span>
+          {/* <span className="font-bold italic ">full-stack developer</span> */}
         </motion.h3>
         <motion.p
           className="font_content w-3/4 
-          mx-auto mt-5 text-[clamp(1rem,1.2vw,1.5rem)] lg:text-left lg:w-2/3 
+          mx-auto mt-5 text-[clamp(1rem,1.2vw,1.5rem)] lg:text-left lg:w-3/5 
           lg:ml-0 lg:leading-loose"
           variants={content_variant}
         >
-          <span className="text-primary-100">01.</span> A full stack web
-          developer, with experience in creating and managing static and dynamic
-          pages through the web. I build and design modern intuitive websites
-          and applications .
+          <span className="text-primary-100">01.</span> I design and build
+          scalable applications, support production and field systems, and
+          deliver reliable solutions that perform in real-world environments.
         </motion.p>
         {/* Hero CTA */}
         <motion.div
