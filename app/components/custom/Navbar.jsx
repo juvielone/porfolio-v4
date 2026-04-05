@@ -30,7 +30,7 @@ export default function Example() {
       {({ open }) => (
         <>
           <div className="mx-auto w-full sm:px-6 lg:px-8 lg:p-[1.2rem] pt-8 ">
-            <div className="relative flex h-16 items-center justify-between md:w-11/12 md:mx-auto lg:w-[80vw] bg-red-100">
+            <div className="relative flex h-16 items-center justify-between md:w-11/12 md:mx-auto lg:w-[80vw]">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-500 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
